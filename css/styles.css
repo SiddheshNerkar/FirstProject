@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header__logo {
+    height: 40px;
+}
+
+/* Search Bar and Buttons */
+.header__search-bar {
+    flex-grow: 1;
+    max-width: 600px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px 0 0 2px;
+}
+
+.header__search-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #ccc;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+.header__icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background-color: #ffffff;
+    padding-top: 20px;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar__nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar__item {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar__item:hover {
+    background-color: #f1f1f1;
+}
+
+.sidebar__divider {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+/* Video Section */
+.video-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+/* Video Card */
+.video-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card__thumbnail {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.video-card__info {
+    display: flex;
+    margin-top: 10px;
+}
+
+.video-card__channel-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.video-card__text {
+    flex: 1;
+}
+
+.video-card__title {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.video-card__channel,
+.video-card__stats {
+    font-size: 14px;
+    color: #606060;
+    margin: 0;
+}

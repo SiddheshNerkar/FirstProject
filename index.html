@@ -1,0 +1,63 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__left">
+            <img src="images/logo.png" alt="YouTube Logo" class="header__logo">
+        </div>
+        <div class="header__center">
+            <input type="text" class="header__search-bar" placeholder="Search">
+            <button class="header__search-button">🔍</button>
+        </div>
+        <div class="header__right">
+            <button class="header__icon">🔔</button>
+            <button class="header__icon">👤</button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <nav class="sidebar__nav">
+            <ul>
+                <li class="sidebar__item">🏠 Home</li>
+                <li class="sidebar__item">🔥 Trending</li>
+                <li class="sidebar__item">📺 Subscriptions</li>
+                <li class="sidebar__divider"></li>
+                <li class="sidebar__item">📚 Library</li>
+                <li class="sidebar__item">🕒 History</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="video-section">
+            <div class="video-grid">
+                <!-- Video Card -->
+                <div class="video-card">
+                    <img src="images/video-thumbnail.jpg" alt="Video Thumbnail" class="video-card__thumbnail">
+                    <div class="video-card__info">
+                        <img src="images/channel-icon.jpg" alt="Channel Icon" class="video-card__channel-icon">
+                        <div class="video-card__text">
+                            <h3 class="video-card__title">Video Title</h3>
+                            <p class="video-card__channel">Channel Name</p>
+                            <p class="video-card__stats">1M views • 1 week ago</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more video cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
